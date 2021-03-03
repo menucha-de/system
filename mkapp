@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+set -x
+
+env
+
+. /usr/share/mkapp/functions
+
+rewrite
+
+for arch in $ARCH; do
+  set_env $arch
+
+  build -F
+done
+
+if [ "$PUBLISH" ]; then
+  publish_debs
+fi

@@ -1,0 +1,27 @@
+[
+    {
+        "Section": "Match",
+        "Name": "Name",
+        "Value": "<linkname>"
+    },
+    {
+        "Section": "Link",
+        "Name": "MACAddress",
+        "Value": "<macaddress>"
+    },
+    {
+        "Section": "Network",
+        "Name": "DHCP",
+        "Value": "<dhcp>"
+    },
+    {
+        "Section": "Network",
+        "Name": "LLMNR",
+        "Value": "yes"
+    },
+    {
+        "Section": "Network",
+        "Name": "MulticastDNS",
+        "Value": "yes"
+    }
+]

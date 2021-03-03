@@ -1,0 +1,37 @@
+[
+    {
+        "Section": "Unit",
+        "Name": "Description",
+        "Value": "<description>"
+    },
+    {
+        "Section": "Unit",
+        "Name": "After",
+        "Value": "containerd.service"
+    },
+    {
+        "Section": "Unit",
+        "Name": "PartOf",
+        "Value": "containerd.service"
+    },
+    {
+        "Section": "Service",
+        "Name": "ExecStart",
+        "Value": "/opt/peramic-app/art -s -n <containername> -ns <namespace>"
+    },
+    {
+        "Section": "Service",
+        "Name": "Restart",
+        "Value": "on-abnormal"
+    },
+    {
+        "Section": "Service",
+        "Name": "RestartSec",
+        "Value": "0.1"
+    },
+    {
+        "Section": "Install",
+        "Name": "WantedBy",
+        "Value": "multi-user.target"
+    }
+]

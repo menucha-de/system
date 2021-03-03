@@ -1,0 +1,115 @@
+openapi: 3.0.3
+info:
+  title: Service configuration
+  description: Service configuration
+  contact:
+    name: Support
+    email: support@peraMIC.io
+  version: 0.0.1
+servers:
+- url: https://{mica-host}/services
+  description: Service configuration
+  variables:
+    mica-host:
+      description: The ip of the MICA
+      default: 10.10.10.10
+security:
+- basic_auth: []
+tags:
+- name: Service
+paths:
+  /{name}:
+    parameters:
+    - name: name
+      in: path
+      description: Name of the service
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Service
+      summary: Returns service status
+      operationId: getServiceStatus
+      responses:
+        '200':
+          description: Status of the given service as a JSON object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Config'
+    post:
+      tags:
+      - Service
+      summary: Creates the config file for the given service
+      operationId: createService
+      responses:
+        '204':
+          description: Service config created
+    put:
+      tags:
+      - Service
+      summary: Updates the config file of the given service
+      operationId: updateService
+      responses:
+        '204':
+          description: Service config updated
+    delete:
+      tags:
+      - Service
+      summary: Deletes the config file of the given service
+      operationId: deleteService
+      responses:
+        '204':
+          description: Service config deleted
+components:
+  schemas:
+    Config:
+      type: object
+      properties:
+        unit:
+          $ref: '#/components/schemas/Unit'
+        service:
+          $ref: '#/components/schemas/Service'
+        properties:
+          type: object
+          additionalProperties:
+            type: string
+      description: Systemd service configuration
+      example:
+        unit:
+          description: My service description
+          requires: My requirements
+          documentation: Available documentation
+        service:
+          type: notify
+          execStart: /usr/sbin/myservice -n -iNONE
+          standardOutput: null
+          restart: on-failure
+        properties:
+    Service:
+      type: object
+      properties:
+        type:
+          type: string
+        execStart:
+          type: string
+        standardOutput:
+          type: string
+        restart:
+          type: string
+      description: Systemd service description
+    Unit:
+      type: object
+      properties:
+        description:
+          type: string
+        requires:
+          type: string
+        documentation:
+          type: string
+      description: Systemd service unit
+  securitySchemes:
+    basic_auth:
+      type: http
+      scheme: basic

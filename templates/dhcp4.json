@@ -1,0 +1,7 @@
+[
+    {
+        "Section": "Network",
+        "Name": "DHCP",
+        "value": "yes"
+    }
+]

@@ -1,0 +1,83 @@
+openapi: 3.0.1
+info:
+  title: Network configuration
+  description: Network configuration
+  contact:
+    name: Support
+    email: support@peraMIC.io
+  version: 0.0.1
+servers:
+- url: https://{mica-host}/net
+  description: Network configuration
+  variables:
+    mica-host:
+      description: The ip of the MICA
+      default: 10.10.10.10
+security:
+- basic_auth: []
+tags:
+- name: Network
+paths:
+  /info:
+    get:
+      tags:
+      - Network
+      summary: Returns network configuration info
+      operationId: getNetworkInfo
+      responses:
+        default:
+          description: App configuration as a JSON object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NetworkInfo'
+    put:
+      tags:
+      - Network
+      summary: Updates the app configuration
+      operationId: setConfig
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NetworkInfo'
+      responses:
+        default:
+          description: default response
+components:
+  schemas:
+    NetworkInfo:
+      type: object
+      properties:
+        linkID:
+          type: number
+          format: integer
+          description: Link Index
+        linkType:
+          type: string
+          description: Link type
+        ipv4Address:
+          type: string
+          description: IPv4 Address
+        ipv6Address:
+          type: string
+          description: IPv6 Address
+        hwAddress:
+          type: string
+          description: Hardware Address (MAC)
+        gateway:
+          type: string
+          description: Gateway
+        dnsSuffix:
+          type: string
+          description: DNS Suffix
+      description: Overall configuration
+      example:
+        ipv6Address: ipv6Address
+        dnsSuffix: dnsSuffix
+        ipv4Address: ipv4Address
+        hwAddress: hwAddress
+  securitySchemes:
+    basic_auth:
+      type: http
+      scheme: basic

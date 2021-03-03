@@ -1,0 +1,17 @@
+[
+    {
+        "Section": "Network",
+        "Name": "Address",
+        "Value": "<address>"
+    },
+    {
+        "Section": "Network",
+        "Name": "Gateway",
+        "Value": "<gateway>"
+    },
+    {
+        "Section": "Network",
+        "Name": "DNS",
+        "Value": "<dns>"
+    }
+]

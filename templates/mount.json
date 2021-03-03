@@ -1,0 +1,32 @@
+[
+    {
+        "Section": "Unit",
+        "Name": "Description",
+        "Value": "<description>"
+    },
+    {
+        "Section": "Mount",
+        "Name": "Type",
+        "Value": "overlay"
+    },
+    {
+        "Section": "Mount",
+        "Name": "What",
+        "Value": "<what>"
+    },
+    {
+        "Section": "Mount",
+        "Name": "Where",
+        "Value": "<where>"
+    },
+    {
+        "Section": "Mount",
+        "Name": "Options",
+        "Value": "<options>"
+    },
+    {
+        "Section": "Mount",
+        "Name": "LazyUmount",
+        "Value": "<lazy>"
+    }
+]

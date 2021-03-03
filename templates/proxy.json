@@ -1,0 +1,17 @@
+[
+    {
+        "Section": "Manager",
+        "Name": "DefaultEnvironment",
+        "value": "HTTP_PROXY=\"<http_proxy>\""
+    },
+    {
+        "Section": "Manager",
+        "Name": "DefaultEnvironment",
+        "value": "HTTPS_PROXY=\"<https_proxy>\""
+    },
+    {
+        "Section": "Manager",
+        "Name": "DefaultEnvironment",
+        "value": "NO_PROXY=\"mqtt,169.254.0.1,<no_proxy>\""
+    }
+]
