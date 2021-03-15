@@ -10,7 +10,7 @@ import (
 
 	"github.com/coreos/go-systemd/sdjournal"
 	"github.com/gorilla/mux"
-	"github.com/peramic/logging"
+	"github.com/menucha-de/logging"
 )
 
 var log *logging.Logger = logging.GetLogger("journal")

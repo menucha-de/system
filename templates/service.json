@@ -17,7 +17,7 @@
     {
         "Section": "Service",
         "Name": "ExecStart",
-        "Value": "/opt/peramic-app/art -s -n <containername> -ns <namespace>"
+        "Value": "/opt/menucha-de/art -s -n <containername> -ns <namespace>"
     },
     {
         "Section": "Service",

@@ -3,8 +3,8 @@
  *
  * Network configuration
  *
- * API version: 0.0.1
- * Contact: support@peraMIC.io
+ * API version: 1.0.0
+ * Contact: info@menucha.de
  */
 package network
 
@@ -13,11 +13,11 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/peramic/logging"
-	"github.com/peramic/utils"
+	"github.com/menucha-de/logging"
+	"github.com/menucha-de/utils"
 )
 
-var log *logging.Logger = logging.GetLogger("systemd-network")
+var log *logging.Logger = logging.GetLogger("network")
 
 func GetNetworkInfo(w http.ResponseWriter, r *http.Request) {
 

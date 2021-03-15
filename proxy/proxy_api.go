@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/peramic/App.Systemd/service"
-	"github.com/peramic/logging"
-	"github.com/peramic/utils"
+	"github.com/menucha-de/system/service"
+	"github.com/menucha-de/logging"
+	"github.com/menucha-de/utils"
 )
 
-var log *logging.Logger = logging.GetLogger("systemd-proxy")
+var log *logging.Logger = logging.GetLogger("proxy")
 
 const unitFile string = "/etc/systemd/system.conf.d/10-proxy.conf"
 

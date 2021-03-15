@@ -12,11 +12,11 @@ import (
 
 	"github.com/coreos/go-systemd/v22/unit"
 	"github.com/godbus/dbus/v5"
-	"github.com/peramic/App.Systemd/service"
-	"github.com/peramic/logging"
+	"github.com/menucha-de/system/service"
+	"github.com/menucha-de/logging"
 )
 
-var log *logging.Logger = logging.GetLogger("systemd-datetime")
+var log *logging.Logger = logging.GetLogger("datetime")
 
 func getDateInfo(w http.ResponseWriter, r *http.Request) {
 	var config DateTimeConfig

@@ -1,8 +1,8 @@
-Source: systemd-service
-Maintainer: peraMIC <opensource@peraMIC.io>
+Source: system
+Maintainer: Menucha Team <info@menucha.de>
 Build-Depends: debhelper, golang:native, git, crossbuild-essential-armhf:all, libc6, libsystemd-dev
 
-Package: systemd-service
+Package: system
 Architecture: any
-Depends: ${shlibs:Depends}, swagger-ui
-Description: Systemd service
+Depends: ${shlibs:Depends}
+Description: System web service

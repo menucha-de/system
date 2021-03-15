@@ -1,7 +1,7 @@
 package journal
 
 import (
-	"github.com/peramic/utils"
+	"github.com/menucha-de/utils"
 )
 
 //ProxyRoutes all routes concerning date and time

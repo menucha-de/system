@@ -2,13 +2,13 @@
  *
  * Network configuration
  *
- * API version: 0.0.1
- * Contact: support@peraMIC.io
+ * API info@menucha.deversion: 1.0.0
+ * Contact: info@menucha.de
  */
 package sysinfo
 
 import (
-	"github.com/peramic/utils"
+	"github.com/menucha-de/utils"
 )
 
 // SysInfoRoutes all routes concerning sysinfo

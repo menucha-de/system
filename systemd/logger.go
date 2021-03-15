@@ -1,8 +1,8 @@
 /*
  * Network configuration
  *
- * API version: 0.0.1
- * Contact: support@peraMIC.io
+ * API info@menucha.deversion: 1.0.0
+ * Contact: info@menucha.de
  */
 package systemd
 

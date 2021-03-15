@@ -6,10 +6,10 @@ import (
 
 	"github.com/coreos/go-systemd/v22/dbus"
 	"github.com/gorilla/mux"
-	"github.com/peramic/logging"
+	"github.com/menucha-de/logging"
 )
 
-var log *logging.Logger = logging.GetLogger("systemd-service")
+var log *logging.Logger = logging.GetLogger("service")
 
 // CreateRequest ...
 type CreateRequest struct {
