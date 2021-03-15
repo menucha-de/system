@@ -1,4 +1,4 @@
-module github.com/peramic/App.Systemd
+module github.com/menucha-de/system
 
 go 1.14
 
@@ -12,8 +12,8 @@ require (
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/gorilla/mux v1.7.4
 	github.com/mattn/go-sqlite3 v1.14.0 // indirect
-	github.com/peramic/logging v0.0.0-20210302152621-d412952d23c1
-	github.com/peramic/utils v0.0.0-20210302153209-51de1f683749
+	github.com/menucha-de/logging v0.0.0-20210315113139-fe4ac23b5e6d
+	github.com/menucha-de/utils v0.0.0-20210315113458-58b282a57797
 	github.com/sirupsen/logrus v1.6.0 // indirect
 	github.com/vishvananda/netlink v1.1.0
 	gopkg.in/yaml.v2 v2.3.0 // indirect

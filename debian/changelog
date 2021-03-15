@@ -1,5 +1,5 @@
-systemd-service (1.0.0-1) unstable; urgency=medium
+system (1.0.0-1) unstable; urgency=medium
  
   * Initialization
  
- -- peraMIC <opensource@peraMIC.io>  Mon, 10 Aug 2020 15:41:13 +0200
+ -- Menucha Team <info@menucha.de>  Mon, 15 Mar 2021 11:50:58 +0100

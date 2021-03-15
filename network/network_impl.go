@@ -8,9 +8,9 @@ import (
 
 	"github.com/coreos/go-systemd/v22/unit"
 
-	"github.com/peramic/App.Systemd/service"
+	"github.com/menucha-de/system/service"
 
-	"github.com/peramic/utils"
+	"github.com/menucha-de/utils"
 
 	"github.com/vishvananda/netlink"
 )

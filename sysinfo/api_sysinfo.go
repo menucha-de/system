@@ -1,6 +1,6 @@
 /*Package sysinfo Base system information
- * API version: 0.0.1
- * Contact: support@peraMIC.io
+ * API info@menucha.deversion: 1.0.0
+ * Contact: info@menucha.de
  */
 package sysinfo
 
@@ -9,10 +9,10 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/peramic/logging"
+	"github.com/menucha-de/logging"
 )
 
-var log *logging.Logger = logging.GetLogger("systemd-sysinfo")
+var log *logging.Logger = logging.GetLogger("sysinfo")
 
 // GetSysInfo Base system information
 func GetSysInfo(w http.ResponseWriter, r *http.Request) {
