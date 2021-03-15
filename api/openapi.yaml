@@ -4,8 +4,8 @@ info:
   description: Network configuration
   contact:
     name: Support
-    email: support@peraMIC.io
-  version: 0.0.1
+    email: info@menucha.de
+  info@menucha.deversion: 1.0.0
 servers:
 - url: https://{mica-host}/net
   description: Network configuration

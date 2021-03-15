@@ -1,0 +1,3 @@
+service /opt/menucha-de/
+api/openapi.yaml /opt/menucha-de/www/
+templates /opt/menucha-de/

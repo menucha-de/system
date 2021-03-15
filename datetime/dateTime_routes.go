@@ -1,7 +1,7 @@
 package datetime
 
 import (
-	"github.com/peramic/utils"
+	"github.com/menucha-de/utils"
 )
 
 //DateTimeRoutes all routes concerning date and time

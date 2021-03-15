@@ -1,3 +1,0 @@
-systemd-service /opt/peramic-app/
-api/openapi.yaml /opt/peramic-app/www/
-templates /opt/peramic-app/

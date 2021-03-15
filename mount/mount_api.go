@@ -7,11 +7,11 @@ import (
 	"strings"
 
 	"github.com/gorilla/mux"
-	"github.com/peramic/App.Systemd/service"
-	"github.com/peramic/logging"
+	"github.com/menucha-de/system/service"
+	"github.com/menucha-de/logging"
 )
 
-var log *logging.Logger = logging.GetLogger("systemd-mount")
+var log *logging.Logger = logging.GetLogger("mount")
 
 // Service ...
 type Service int

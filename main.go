@@ -1,8 +1,8 @@
 /*
- * App.Systemd
+ * system
  *
- * API version: 0.0.1
- * Contact: support@peraMIC.io
+ * API version: 1.0.0
+ * Contact: info@menucha.de
  */
 
 package main
@@ -11,21 +11,21 @@ import (
 	"net/http"
 	"net/rpc"
 
-	"github.com/peramic/logging"
+	"github.com/menucha-de/logging"
 
-	"github.com/peramic/App.Systemd/datetime"
-	"github.com/peramic/App.Systemd/journal"
-	"github.com/peramic/App.Systemd/network"
-	"github.com/peramic/App.Systemd/proxy"
-	"github.com/peramic/App.Systemd/service"
-	"github.com/peramic/App.Systemd/sysinfo"
-	"github.com/peramic/App.Systemd/systemd"
+	"github.com/menucha-de/system/datetime"
+	"github.com/menucha-de/system/journal"
+	"github.com/menucha-de/system/network"
+	"github.com/menucha-de/system/proxy"
+	"github.com/menucha-de/system/service"
+	"github.com/menucha-de/system/sysinfo"
+	"github.com/menucha-de/system/systemd"
 )
 
 var log *logging.Logger
 
 func main() {
-	log = logging.GetLogger("systemd")
+	log = logging.GetLogger("system")
 	//log.SetLevel(logrus.DebugLevel)
 
 	// systemd.AddRoutes(mount.MountRoutes)
@@ -46,5 +46,5 @@ func main() {
 
 	log.Infof("Server started")
 
-	log.Fatal(http.ListenAndServe("systemd:8080", router))
+	log.Fatal(http.ListenAndServe("system:8080", router))
 }
